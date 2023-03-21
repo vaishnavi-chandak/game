@@ -1,0 +1,39 @@
+{
+    "name" : "tic tac toe",
+    "start_uel": "/game",
+    "short_name": "xno",
+    "display":"standalone",
+    "description": "The Best Game Ever 😎",
+    "icons":[
+        {
+             "src": "asste/logo-48x48.png",
+             "sizes":"48x48"
+
+        },
+        {
+            "src": "asste/logo-72x72.png",
+            "sizes":"72x72"
+
+       },
+       {
+        "src": "asste/logo-96x96.png",
+        "sizes":"96x96"
+
+        },
+        {
+         "src": "asste/logo-144x144.png",
+          "sizes":"144x144"
+
+       },
+       {
+         "src": "asste/logo-192x192.png",
+        "sizes":"192x192"
+
+         },
+      {
+        "src": "asste/logo-512x512.png",
+         "sizes":"512x512"
+
+         }
+    ]
+}

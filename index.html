@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>tic tac toe By SKILLHUB</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .box {
+        height: 200px;
+        width: 100%;
+        border: 2px solid gray;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <div class="container" id="playcard">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <div class="card">
+            <div class="card-header">Enter name</div>
+            <div class="card-body">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter name"
+                id="p1"
+              /><br />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter name"
+                id="p2"
+              />
+              <br />
+              <button class="btn btn-primary w-100" onclick="startGame()">
+                start game
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cotainer my-5" id="output"></div>
+    <div class="container d-none" id="gamecard">
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="card">
+            <card- class="header">Tic-tac-toe</card->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h6 id="player1">player 1</h6>
+                        <strong id="player1wincount">0</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h6 id="player2">player 2</h6>
+                        <strong id="player2wincount">0</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h6>draw</h6>
+                        <strong id="drawcount">0</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h6>Total</h6>
+                        <strong id="totalcount">0</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="box" onclick="game('b1')" id="b1">1</div>
+                </div>
+                <div class="col-4">
+                  <div class="box" onclick="game('b2')" id="b2">2</div>
+                </div>
+                <div class="col-4">
+                  <div class="box" onclick="game('b3')" id="b3">3</div>
+                </div>
+                <div class="col-4">
+                  <div class="box" onclick="game('b4')" id="b4">4</div>
+                </div>
+                <div class="col-4">
+                  <div class="box" onclick="game('b5')" id="b5">5</div>
+                </div>
+                <div class="col-4">
+                  <div class="box" onclick="game('b6')" id="b6">6</div>
+                </div>
+                <div class="col-4">
+                  <div class="box" onclick="game('b7')" id="b7">7</div>
+                </div>
+                <div class="col-4">
+                  <div class="box" onclick="game('b8')" id="b8">8</div>
+                </div>
+                <div class="col-4">
+                  <div class="box" onclick="game('b9')" id="b9">9</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
